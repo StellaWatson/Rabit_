@@ -1,16 +1,30 @@
-# This is a sample Python script.
+# begin
+def sayingHello(name):
+    print("******************************")
+    print(f" 😀 Hey,{name}. Welcome to Rabit ! ")
+    print("******************************")
+def choosePet(pets):
+    for pet in pets:
+        print(pet,end=" ")
+    choosenPet=input("Choose one of them: ")
+    return choosenPet
+def showstatuOfAnimal(animal):
+    for k,v in animal.items():
+        print(f"{k} - > {v}")
 
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
+
+animal={"energy":50,"hunger":50,"sleep":50}
+showstatuOfAnimal(animal)
+
+def askHabitIsDone(habits):
+    for habit in habits:
+        answer=input(f"Did you completed the {habit} : (y/n)").lower()
+        if answer=='y':
+            return True
+    return False
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+
