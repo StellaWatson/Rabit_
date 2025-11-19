@@ -7,8 +7,14 @@ def sayingHello(name):
     print("""+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++""")
 def choosePet(pets):
     for pet in pets:
-        print(pet,end=" ")
-    choosenPet=input("\nChoose Your pet : ")
+        print(pet,end=", ")
+
+    while True:
+        choosenPet = input("\nChoose Your pet : ")
+        if choosenPet in pets:
+            break
+        else:
+            print("❗ Please choose a pet from the list ")
     return choosenPet
 def showstatuOfAnimal(animal):
     print("Your Pet's status ")
@@ -36,6 +42,8 @@ def addHabit():
 
 def viewHabits():
     print("Your Habits:")
+    if len(userSelectedHabits)==0:
+        print("No Habits")
     for habit, done in userSelectedHabits.items():
         status = "✓ done" if done else "✗ not done"
         print(f"- {habit} : {status}")
@@ -87,6 +95,9 @@ if __name__=='__main__':
     pets=["Cat","Dog","Rabbit",]
     statusOfPet={"Energy":5,"Hunger":5,"Happiness":5}
     userPet = choosePet(pets)
+    if  not userPet in pets:
+        print("Slec")
+
     print("""+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++""")
     print(f"Your Pet is {userPet}, Take Care of it ! ")
     print("""+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++""")
