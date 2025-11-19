@@ -20,6 +20,7 @@ def showstatuOfAnimal(animal):
     print("Your Pet's status ")
     print("_________________")
     for k,v in animal.items():
+
         print(f"{k} - > {v}")
 def addHabit():
     habits = [
@@ -95,8 +96,7 @@ if __name__=='__main__':
     pets=["Cat","Dog","Rabbit",]
     statusOfPet={"Energy":5,"Hunger":5,"Happiness":5}
     userPet = choosePet(pets)
-    if  not userPet in pets:
-        print("Slec")
+
 
     print("""+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++""")
     print(f"Your Pet is {userPet}, Take Care of it ! ")
