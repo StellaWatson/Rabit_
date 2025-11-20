@@ -1,9 +1,9 @@
 # begin
 def sayingHello(name):
     print("""+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++""")
-    print("""                                                             """)
-    print(f"""      😀HEY, {name.upper()}, WELCOME TO RABIT HABIT TRACKER """)
-    print("""                                                            """)
+    print("""                                                               """)
+    print(f"""  😀HEY, {name.upper()}, WELCOME TO GreenBit HABIT TRACKER    """)
+    print("""                                                               """)
     print("""+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++""")
 def choosePet(pets):
     for pet in pets:
